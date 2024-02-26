@@ -1,13 +1,13 @@
 @font-face {
   font-family: "Montserrat";
-  src: url("/starter-kit/assets/Montserrat-Regular.woff2") format("woff2"), url("/starter-kit/assets/Montserrat-Regular.woff") format("woff");
+  src: url("/sass-project/assets/Montserrat-Regular.woff2") format("woff2"), url("/sass-project/assets/Montserrat-Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Montserrat";
-  src: url("/starter-kit/assets/Montserrat-Medium.woff2") format("woff2"), url("/starter-kit/assets/Montserrat-Medium.woff") format("woff");
+  src: url("/sass-project/assets/Montserrat-Medium.woff2") format("woff2"), url("/sass-project/assets/Montserrat-Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
@@ -21,7 +21,7 @@
 }
 @font-face {
   font-family: "Montserrat";
-  src: url("/starter-kit/assets/Montserrat-Bold.woff2") format("woff2"), url("/starter-kit/assets/Montserrat-Bold.woff") format("woff");
+  src: url("/sass-project/assets/Montserrat-Bold.woff2") format("woff2"), url("/sass-project/assets/Montserrat-Bold.woff") format("woff");
   font-weight: 700;
   font-style: normal;
   font-display: swap;
