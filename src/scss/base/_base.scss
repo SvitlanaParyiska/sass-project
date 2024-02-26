@@ -1,0 +1,20 @@
+@use "../utils/placeholders";
+@use "../utils/variables" as var;
+@use "../utils/functions" as fn;
+
+body {
+  @extend %main-text;
+  font-family: var.$main-font, sans-serif;
+  background: fn.get-color("dark-primary");
+  color: fn.get-color("light-secondary");
+}
+
+button {
+  font-family: inherit;
+  color: fn.get-color("current");
+  cursor: pointer;
+}
+
+summary {
+  list-style-type: none;
+}
