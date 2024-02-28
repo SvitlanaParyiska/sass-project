@@ -174,14 +174,14 @@ meter {
   letter-spacing: 0.025em;
 }
 
-body {
+.companies-item-text, body {
   font-weight: 400;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.03em;
 }
 
-.reports-title span, .tasks-title span, .board-caption, .co-workers-table caption span, .co-workers-title span {
+.companies-item-title, .reports-title span, .tasks-title span, .board-caption, .co-workers-table caption span, .co-workers-title span {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
@@ -195,7 +195,7 @@ body {
   letter-spacing: 0.04em;
 }
 
-.badge-danger, .badge-warning, .badge-success, .co-workers-table thead th, .co-workers-position, .co-workers-accept {
+.companies-btn, .badge-danger, .badge-warning, .badge-success, .co-workers-table thead th, .co-workers-position, .co-workers-accept {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.42;
@@ -205,6 +205,11 @@ body {
 .reports, .tasks, .board-item {
   padding: 16px;
   border-radius: 12px;
+}
+
+.companies-item {
+  padding: 24px;
+  border-radius: 24px;
 }
 
 body {
@@ -1293,6 +1298,55 @@ summary {
   background-color: #82c43c;
 }
 
+.companies-list {
+  display: grid;
+  gap: 20px;
+}
+
+.companies-item {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+     -moz-box-pack: justify;
+          justify-content: space-between;
+  min-width: 343px;
+  background-color: #292932;
+}
+
+.companies-item-title {
+  margin-top: 14px;
+}
+
+.geotag-box {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: flex;
+  gap: 8px;
+  margin-top: 18px;
+}
+
+.geotag-icon use {
+  fill: #82c43c;
+}
+
+.companies-icon {
+  fill: #fff;
+}
+
+.companies-btn {
+  color: #f07f2e;
+  border: 1px solid currentColor;
+  border-radius: 12px;
+  padding: 8px 12px;
+  width: 89px;
+  height: 36px;
+  margin-top: 32px;
+}
+
 @media only screen and (min-width: 768px) {
   .main {
     gap: 36px;
@@ -1351,6 +1405,10 @@ summary {
   }
   .search-field {
     margin-right: auto;
+  }
+  .companies-list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
   }
 }
 
