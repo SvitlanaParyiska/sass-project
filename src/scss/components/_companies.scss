@@ -1,0 +1,57 @@
+@use "../utils/placeholders";
+@use "../utils/variables" as var;
+@use "../utils/functions" as fn;
+@use "../utils/mixins" as mx;
+
+.companies-list {
+  display: grid;
+  gap: 20px;
+
+  @include mx.mq("lg") {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+}
+
+.companies-item {
+  @extend %companies-frame;
+  display: flex;
+  justify-content: space-between;
+  min-width: 343px;
+  background-color: fn.get-color("dark-tertiary");
+}
+
+.companies-item-title {
+  @extend %accent-text;
+  margin-top: 14px;
+}
+
+.companies-item-text {
+  @extend %main-text;
+}
+
+.geotag-box {
+  display: flex;
+  gap: 8px;
+  margin-top: 18px;
+}
+.geotag-icon {
+  use {
+    fill: fn.get-color("success");
+  }
+}
+
+.companies-icon {
+  fill: fn.get-color("light");
+}
+
+.companies-btn {
+  @extend %details-accent;
+  color: fn.get-color("accent-primary");
+  border: 1px solid currentColor;
+  border-radius: 12px;
+  padding: 8px 12px;
+  width: 89px;
+  height: 36px;
+  margin-top: 32px;
+}
